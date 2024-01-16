@@ -1,0 +1,15 @@
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\bin\Debug\net5.0\DataAccessObject.deps.json
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\bin\Debug\net5.0\DataAccessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\bin\Debug\net5.0\DataAccessObject.pdb
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\bin\Debug\net5.0\BusinessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\bin\Debug\net5.0\BusinessObject.pdb
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.csproj.AssemblyReference.cache
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.AssemblyInfoInputs.cache
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.AssemblyInfo.cs
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.csproj.CoreCompileInputs.cache
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.csproj.CopyComplete
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\refint\DataAccessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\DataAccessObject.pdb
+C:\CodeUniversity\PRN221\Assignment 1\DataAccessObject\obj\Debug\net5.0\ref\DataAccessObject.dll

@@ -1,0 +1,15 @@
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\bin\Debug\net5.0\BusinessObject.deps.json
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\bin\Debug\net5.0\BusinessObject.runtimeconfig.json
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\bin\Debug\net5.0\BusinessObject.runtimeconfig.dev.json
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\bin\Debug\net5.0\BusinessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\bin\Debug\net5.0\BusinessObject.pdb
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.csproj.AssemblyReference.cache
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.AssemblyInfoInputs.cache
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.AssemblyInfo.cs
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.csproj.CoreCompileInputs.cache
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\refint\BusinessObject.dll
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.pdb
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\BusinessObject.genruntimeconfig.cache
+C:\CodeUniversity\PRN221\Assignment 1\BusinessObject\obj\Debug\net5.0\ref\BusinessObject.dll
