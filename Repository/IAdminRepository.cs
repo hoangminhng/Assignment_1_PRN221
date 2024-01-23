@@ -4,6 +4,6 @@ namespace Repository
 {
     public interface IAdminRepository
     {
-        public AdminModel GetAdminViewModel();
+        public Admin GetAdminViewModel();
     }
 }

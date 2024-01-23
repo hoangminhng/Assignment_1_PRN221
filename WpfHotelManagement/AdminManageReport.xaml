@@ -1,13 +1,36 @@
 <UserControl x:Class="WpfHotelManagement.AdminManageReport"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-      xmlns:local="clr-namespace:WpfHotelManagement"
-      mc:Ignorable="d"
-      Height="450" Width="800">
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:WpfHotelManagement"
+             mc:Ignorable="d"
+             Height="450" Width="800">
     <Grid>
-        <Label Name="lblInstruction" Foreground="Brown" FontWeight="DemiBold" HorizontalAlignment="Center"
-               FontSize="20" Content="Manage Report" />
+        <StackPanel>
+            <Label Name="lblInstruction" Foreground="Brown" FontWeight="DemiBold" HorizontalAlignment="Center"
+                   FontSize="20" Content="Manage Report" />
+
+            <StackPanel Orientation="Horizontal">
+                <Label Content="start date"></Label>
+                <DatePicker Name="dtStartDate" Width="200"></DatePicker>
+                <Label Content="end date"></Label>
+                <DatePicker Name="dtEndDate" Width="200"></DatePicker>
+                <Button Name="btnSearch" Content="Search" Click="BtnSearch_OnClick"/>
+            </StackPanel>
+            <DataGrid Name="dgCustomers" AutoGenerateColumns="False" ItemsSource="{Binding Customers}" Margin="10"
+                      Grid.Row="1">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Booking Reservation Id" Binding="{Binding BookingReservationId}"
+                                        IsReadOnly="True" />
+                    <DataGridTextColumn Header="Room Id" Binding="{Binding RoomId}" />
+                    <DataGridTextColumn Header="Start date" Binding="{Binding StartDate}" />
+                    <DataGridTextColumn Header="End date" Binding="{Binding EndDate}" />
+                    <DataGridTextColumn Header="Actual Price" Binding="{Binding ActualPrice}" />
+                    <!-- Add more columns as needed -->
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+
     </Grid>
 </UserControl>

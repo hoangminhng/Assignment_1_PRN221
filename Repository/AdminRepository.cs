@@ -11,7 +11,7 @@ namespace Repository
         {
             _adminDAO = new AdminDAO();
         }
-        public AdminModel GetAdminViewModel()
+        public Admin GetAdminViewModel()
         {
             return _adminDAO.GetDataFromFile();
         }

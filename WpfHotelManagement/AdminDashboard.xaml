@@ -5,12 +5,12 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:local="clr-namespace:WpfHotelManagement"
         mc:Ignorable="d"
-        Title="AdminDashboard" Height="450" Width="800">
+        Title="AdminDashboard" Height="450" Width="900">
     <DockPanel>
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="Auto"/>
-                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
             </Grid.ColumnDefinitions>
             <!-- Left side with buttons -->
             <StackPanel Orientation="Vertical" Width="150" Background="LightGray" HorizontalAlignment="Left">
@@ -21,7 +21,7 @@
             </StackPanel>
 
             <!-- Right side with ContentControl for dynamic content -->
-            <ContentControl x:Name="mainContent" Grid.Column="1" HorizontalAlignment="Right"/>
+            <ContentControl x:Name="mainContent" Grid.Column="1" HorizontalAlignment="Right" DockPanel.Dock="Top"/>
             
             <Button Content="Logout" Click="Logout_OnClick" Width="150" VerticalAlignment="Bottom" HorizontalAlignment="Left" />
         </Grid>

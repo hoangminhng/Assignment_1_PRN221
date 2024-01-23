@@ -9,9 +9,9 @@ namespace DataAccessObject
     {
         private string fileName = "AdminInfo.json";
 
-        public AdminModel GetDataFromFile()
+        public Admin GetDataFromFile()
         {
-            AdminModel admin = new AdminModel();
+            Admin admin = new Admin();
             try
             {
                 if (File.Exists(fileName))
@@ -21,7 +21,7 @@ namespace DataAccessObject
                     var adminFileData = JsonSerializer.Deserialize<AdminFileData>(jsonData);
 
                     // Extract the DefaultUser property from AdminFileData
-                    admin = adminFileData?.DefaultUser ?? new AdminModel();
+                    admin = adminFileData?.DefaultUser ?? new Admin();
                 }
             }
             catch (Exception e)

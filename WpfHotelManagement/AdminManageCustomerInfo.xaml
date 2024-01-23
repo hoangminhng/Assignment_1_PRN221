@@ -7,63 +7,61 @@
              mc:Ignorable="d"
              Height="450" Width="800">
     <Grid>
-        <DockPanel >
-            <StackPanel>
-                <Label Name="lblInstruction" Foreground="Brown" FontWeight="DemiBold" HorizontalAlignment="Center"
-                       FontSize="20" Content="Manage Customer" />
-                <DataGrid Name="dgCustomers" AutoGenerateColumns="False" ItemsSource="{Binding Customers}" Margin="10"
-                          Grid.Row="1" MouseDoubleClick="DgCustomers_OnMouseDoubleClick">
-                    <DataGrid.Columns>
-                        <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerId}" IsReadOnly="True" />
-                        <DataGridTextColumn Header="Full Name" Binding="{Binding CustomerFullName}" />
-                        <DataGridTextColumn Header="Telephone" Binding="{Binding Telephone}" />
-                        <DataGridTextColumn Header="Email" Binding="{Binding EmailAddress}" />
-                        <DataGridTextColumn Header="Date of birth" Binding="{Binding CustomerBirthday}" />
-                        <DataGridTextColumn Header="Status" Binding="{Binding CustomerStatus}" />
-                        <!-- Add more columns as needed -->
-                    </DataGrid.Columns>
-                </DataGrid>
-                
-                <StackPanel Orientation="Vertical">
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblCustomerId" Content="Customer ID" Width="100" />
-                        <TextBox Name="txtCustomerId" HorizontalAlignment="Left"
-                                 Height="25" Width="300" IsReadOnly="True"/>
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblTelephone" Content="Telephone" Width="100" />
-                        <TextBox Name="txtTelephone" HorizontalAlignment="Left"
-                                 Height="25" Width="300" />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblEmailAddress" Content="Email Address" Width="100" />
-                        <TextBox Name="txtEmailAddress" HorizontalAlignment="Left"
-                                 Height="25" Width="300" />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblCustomerFullName" Content="Full name" Width="100" />
-                        <TextBox Name="txtCustomerFullName" HorizontalAlignment="Left"
-                                 Height="25" Width="300" />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblCustomerBirthday" Content="Birthday" Width="100" />
-                        <DatePicker Width="300" SelectedDateFormat="Long"
-                                    DisplayDateStart="1/01/09" DisplayDateEnd="12/31/09"
-                                    FirstDayOfWeek="Monday" Name="dtBirthday" />
-                    </StackPanel>
-                    <StackPanel Orientation="Horizontal">
-                        <Label Name="lblPassword" Content="Password" Width="100" />
-                        <TextBox Name="txtPassword" HorizontalAlignment="Left"
-                                 Height="25" Width="300" />
-                    </StackPanel>
-                </StackPanel>
-                
+        <StackPanel>
+            <Label Name="lblInstruction" Foreground="Brown" FontWeight="DemiBold" HorizontalAlignment="Center"
+                   FontSize="20" Content="Manage Customer" />
+            <DataGrid Name="dgCustomers" AutoGenerateColumns="False" ItemsSource="{Binding Customers}" Margin="10"
+                      Grid.Row="1" MouseDoubleClick="DgCustomers_OnMouseDoubleClick">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Customer ID" Binding="{Binding CustomerId}" IsReadOnly="True" />
+                    <DataGridTextColumn Header="Full Name" Binding="{Binding CustomerFullName}" />
+                    <DataGridTextColumn Header="Telephone" Binding="{Binding Telephone}" />
+                    <DataGridTextColumn Header="Email" Binding="{Binding EmailAddress}" />
+                    <DataGridTextColumn Header="Date of birth" Binding="{Binding CustomerBirthday}" />
+                    <DataGridTextColumn Header="Status" Binding="{Binding CustomerStatus}" />
+                    <!-- Add more columns as needed -->
+                </DataGrid.Columns>
+            </DataGrid>
+
+            <StackPanel Orientation="Vertical">
                 <StackPanel Orientation="Horizontal">
-                    <Button Name="btnCreate" Margin="10" Width="80" Content="Create" Click="BtnCreate_OnClick"/>
-                    <Button Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="BtnUpdate_OnClick"/>
-                    <Button Name="btnDelete" Margin="10" Width="80" Content="Delete" Click="BtnDelete_OnClick"/>
+                    <Label Name="lblCustomerId" Content="Customer ID" Width="100" />
+                    <TextBox Name="txtCustomerId" HorizontalAlignment="Left"
+                             Height="25" Width="300" IsReadOnly="True" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblTelephone" Content="Telephone" Width="100" />
+                    <TextBox Name="txtTelephone" HorizontalAlignment="Left"
+                             Height="25" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblEmailAddress" Content="Email Address" Width="100" />
+                    <TextBox Name="txtEmailAddress" HorizontalAlignment="Left"
+                             Height="25" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblCustomerFullName" Content="Full name" Width="100" />
+                    <TextBox Name="txtCustomerFullName" HorizontalAlignment="Left"
+                             Height="25" Width="300" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblCustomerBirthday" Content="Birthday" Width="100" />
+                    <DatePicker Width="300" SelectedDateFormat="Long"
+                                DisplayDateStart="1/01/09" DisplayDateEnd="12/31/09"
+                                FirstDayOfWeek="Monday" Name="dtBirthday" />
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Label Name="lblPassword" Content="Password" Width="100" />
+                    <TextBox Name="txtPassword" HorizontalAlignment="Left"
+                             Height="25" Width="300" />
                 </StackPanel>
             </StackPanel>
-        </DockPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Name="btnCreate" Margin="10" Width="80" Content="Create" Click="BtnCreate_OnClick" />
+                <Button Name="btnUpdate" Margin="10" Width="80" Content="Update" Click="BtnUpdate_OnClick" />
+                <Button Name="btnDelete" Margin="10" Width="80" Content="Delete" Click="BtnDelete_OnClick" />
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </UserControl>

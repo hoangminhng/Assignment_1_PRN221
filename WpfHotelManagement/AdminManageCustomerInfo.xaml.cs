@@ -121,7 +121,7 @@ namespace WpfHotelManagement
                     if (updated)
                     {
                         LoadCustomers();
-                        MessageBox.Show("Customer has been updated", "Warning", MessageBoxButton.OK);
+                        MessageBox.Show("Customer has been updated", "Success", MessageBoxButton.OK);
                     }
                     else
                     {
@@ -143,8 +143,8 @@ namespace WpfHotelManagement
             if (existingCustomer != null)
             {
                 var bookingList = _bookingReservationRepository.GetAll().Where(x => x.CustomerId == existingCustomer.CustomerId)
-                    .ToList();
-                if (bookingList != null)
+                    .ToList().Count;
+                if (bookingList > 0)
                 {
                     MessageBox.Show("Customer has booking reservation, status change to 0", "Warning", MessageBoxButton.OK);
                     existingCustomer.CustomerStatus = 0;
@@ -153,10 +153,6 @@ namespace WpfHotelManagement
                 }
                 else
                 {
-                    /*
-                    MessageBox.Show("Customer doesn't has booking reservation", "Warning", MessageBoxButton.OK);
-                    */
-
                     MessageBoxResult confirm =
                         MessageBox.Show("Are you sure want to delete?", "Warning", MessageBoxButton.YesNo);
                     if (confirm == MessageBoxResult.Yes)
@@ -165,7 +161,7 @@ namespace WpfHotelManagement
                         LoadCustomers();
                         if (deleted)
                         {
-                            MessageBox.Show("Product has been deleted", "Warning", MessageBoxButton.OK);
+                            MessageBox.Show("Customer has been deleted", "Warning", MessageBoxButton.OK);
                         }
                         else
                         {

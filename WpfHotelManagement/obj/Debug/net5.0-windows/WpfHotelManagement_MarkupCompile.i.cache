@@ -1,0 +1,20 @@
+﻿WpfHotelManagement
+1.0.0.0
+
+winexe
+C#
+.cs
+C:\CodeUniversity\PRN221\Assignment 1\WpfHotelManagement\obj\Debug\net5.0-windows\
+WpfHotelManagement
+none
+false
+TRACE;DEBUG;NET;NET5_0;NETCOREAPP
+C:\CodeUniversity\PRN221\Assignment 1\WpfHotelManagement\App.xaml
+9596651794
+
+13499768095
+227-1758370798
+AdminDashboard.xaml;AdminManageCustomerInfo.xaml;AdminManageReport.xaml;AdminManageReservation.xaml;AdminManageRoom.xaml;CustomerBookingReservation.xaml;CustomerDashboard.xaml;CustomerProfile.xaml;MainWindow.xaml;
+
+True
+

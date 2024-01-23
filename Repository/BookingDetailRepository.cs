@@ -40,5 +40,22 @@ namespace Repository
         {
             return _baseDao.Update(entity);
         }
+
+        public List<BookingDetail> GetByDateRange(DateTime startDate, DateTime endDate)
+        {
+            try
+            {
+                var result = _baseDao.GetAll().Where(b =>
+                    b.StartDate >= startDate && b.EndDate <= endDate
+                ).ToList();
+                
+                return result;
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e);
+                throw;
+            }
+        }
     }
 }

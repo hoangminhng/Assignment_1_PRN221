@@ -5,10 +5,10 @@ namespace Business.ViewModels
 {
     public class AdminFileData
     {
-        public AdminModel DefaultUser { get; set; }
+        public Admin DefaultUser { get; set; }
     }
 
-    public class AdminModel
+    public class Admin
     {
         public string EmailAddress { get; set; }
         public string Password { get; set; }
